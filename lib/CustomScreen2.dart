@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
+import 'map.page.dart';
 
 class CustomScreen2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Tela Personalizada 2'),
+    return MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
       ),
-      body: Center(
-        child: Text(
-          'Esta é a minha tela personalizada 2!',
-          style: TextStyle(fontSize: 20),
-        ),
-      ),
+      home: MapPage(),
     );
   }
 }
